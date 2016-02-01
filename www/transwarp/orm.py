@@ -452,7 +452,7 @@ class Model(dict):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
-    db.create_engine('root', 'password', 'test', '127.0.0.1')
+    db.create_engine('www-data', 'www-data', 'test', '127.0.0.1')
     db.update('drop table if exists user')
     db.update('create table user (id int primary key, name text, email text, passwd text, last_modified real)')
     import doctest
