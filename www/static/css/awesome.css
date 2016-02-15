@@ -1,1 +1,6 @@
-stores static files.
+/*
+ * custom css
+ */
+a:hover, a:active {
+    text-decoration: none;
+}
